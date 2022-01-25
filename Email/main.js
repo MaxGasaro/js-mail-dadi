@@ -4,9 +4,22 @@ const iscritti = ['massimilianogasaro@gmail.com','mariorossi@gmail.com','pincopa
 //chiediamo all'utente la mail
 let email = prompt('Qual è il tuo indirizzo mail?');
 
+//definiamo una variabile booleana su false
+let flag = false;
+
 //condizione per verificare accesso
-if (email == iscritti[0] || email == iscritti[1] || email == iscritti[2]) {
-    alert('Puoi accedere al documento!!')
-} else {
-    alert('Non puoi accedere al documento!!')
+for (let i=0; i < iscritti.length; i++) {
+ 
+    if (email == iscritti[i]) {
+        alert('Puoi accedere al documento!!')
+    } 
+    
 }
+
+/*if(flag == true){
+    alert('Presente');
+}
+else{
+    alert('Assente');
+}*/
+    
