@@ -11,15 +11,20 @@ let flag = false;
 for (let i=0; i < iscritti.length; i++) {
  
     if (email == iscritti[i]) {
-        alert('Puoi accedere al documento!!')
+
+        flag = true;
+        //alert('Puoi accedere al documento!!')
     } 
     
 }
 
-/*if(flag == true){
-    alert('Presente');
-}
-else{
-    alert('Assente');
-}*/
+if (flag == true) {
+
+    alert('Puoi accedere al documento');
+
+ } else{
+
+    alert('Non puoi accedere al documento');
+
+ }
     
